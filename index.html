@@ -1,18 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">    
-        <script defer src="javascript/index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script defer src="js/index.js"></script>
 
     </head>
     <body>
+        <div class="calculator">
+            <div class="display" id="display">0</div>
+                
+            <div class="btns">
+                <button onclick="adicionaNumero('1')">1</button>
+                <button onclick="adicionaNumero('2')">2</button>
+                <button onclick="adicionaNumero('3')">3</button>
 
-        <input type="text" id="input1" placeholder="valor1"/> 
-        <input type="text" id="input2" placeholder="valor2"/>
-
-        <button onclick="Somar()">Somar</button>
-        <button onclick="Subtrair()">Subtrair</button>
-        <button onclick="Multiplicar()">Multiplicar</button>
-        <button onclick="Dividir()">Dividir</button>
-
+                <button class="btn-operacao" onclick="escolheOperacao('+')">+</button>
+                
+                <button onclick="adicionaNumero('4')">4</button>
+                <button onclick="adicionaNumero('5')">5</button>
+                <button onclick="adicionaNumero('6')">6</button>
+                
+                <button class="btn-operacao" onclick="escolheOperacao('-')">-</button>
+                
+                <button onclick="adicionaNumero('7')">7</button>
+                <button onclick="adicionaNumero('8')">8</button>
+                <button onclick="adicionaNumero('9')">9</button>
+                
+                <button class="btn-operacao" onclick="escolheOperacao('*')">*</button>
+                
+                <button onclick="adicionaNumero('0')">0</button>
+                <button onclick="adicionaNumero('.')">.</button>
+                
+                <button class="btn-clear" onclick="limpaDisplay()">C</button>
+                <button class="btn-operacao" onclick="escolheOperacao('/')">/</button>
+                <button class="btn-igual btn-wide" onclick="calcula()">=</button>
+            </div>
+        </div>
     </body>
 </html>
