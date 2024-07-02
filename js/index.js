@@ -63,3 +63,9 @@ function calcula() {
     operador2ativo = false;
     operacaoAtual = null;
 }
+
+
+function changeDesign(design) {
+    const calculator = document.getElementById("calculator");
+    calculator.className = "calculator " + design;
+}

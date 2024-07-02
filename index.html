@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora</title>
         <link rel="stylesheet" href="./css/style.css">
-        <script defer src="js/index.js"></script>
+        <script defer src="./js/index.js"></script>
 
     </head>
     <body>
-        <div class="calculator">
+        <div class="calculator" id="calculator">
             <div class="display" id="display">0</div>
                 
             <div class="btns">
@@ -38,6 +38,14 @@
                 <button class="btn-operacao" onclick="escolheOperacao('/')">/</button>
                 <button class="btn-igual btn-wide" onclick="calcula()">=</button>
             </div>
+        </div>
+
+        <div class="btn-style">
+            <button onclick="changeDesign('default')">Design Padrão</button>
+            <button onclick="changeDesign('dark-mode')">Modo Escuro</button>
+            <button onclick="changeDesign('claro-mode')">Modo Claro</button>
+            <button onclick="changeDesign('old-mode')">Modo Old</button>
+            <button onclick="changeDesign('big-buttons')">Botões Grandes</button>
         </div>
     </body>
 </html>
